@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>DragTest</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="shortcut icon" href="gobad-g.png" type="image/png">
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/gobad-styles.css">
+    </head>
+    <body  style="background: lightyellow;font-family: sofia;min-width: 1440px">
+        
+        <div class="col-lg-12" style="height: 720px;position: absolute;min-width: 1440px;overflow-x: scroll">
+            <div class="gobad_add_icon" id="drag">
+                    <div class="gobad_add_icon_main">
+                        <span title="Schedule"><div class="gobad_add_icon_main_schedule">
+                                <img id="remainder_img1" src="remainder.png" width="0px" height="0px" class="mTop-30-per">
+                        </div></span>
+                        <div class="gobad_add_icon_main_task">
+                            <img id="remainder_img2" src="manager.png" width="0px" height="0px" class="mTop-30-per rotate-minus-45">
+                        </div>
+                        <div class="gobad_add_icon_main_person">
+                            <img id="remainder_img3" src="user1.jpg" width="0px" height="0px" class="mTop-30-per rotate-minus-45">
+                        </div>
+                        <div class="gobad_add_icon_main_conv">
+                            <img id="remainder_img4" src="chat.png" width="0px" height="0px" class="mTop-30-per rotate-minus-45">
+                        </div>
+                    </div>
+                <div class="gobad_add_icon_inner">
+                    <img id="plusimg" src="pic.jpg" width="100%" height="100%" style="border-radius: 60px;margin-top: 0px;margin-left:0px">
+                </div>
+            </div>
+            
+            <div class="col-lg-12" style="height: 40px;background: #3369e8;position: fixed;min-width: 1440px;z-index: 1;margin-left: -15px">
+                
+                <div class="col-lg-4" style="height: 40px;position: fixed">
+                    
+                    <div class="col-lg-3" style="margin-left: -20px">
+                        
+                        <div class="col-lg-3" style=""><img class="gobad_menu_open" src="menu.png" width="40px" height="40px" style="cursor: pointer;margin-left: -20px"></div>
+                        <div class="col-lg-7" style=""><label class="gobad_menu_open" style="cursor: pointer;font-size: medium;color: #ffffff;margin-top: 8px;margin-left: -10px">Menu</label></div>
+                    </div>
+                    
+                    <div class="col-lg-9" style="margin-left: 20px">
+                        
+                        <label class="gobad_topbar_borderbox_label" style="margin-top: 2px">My Tasks</label>
+                        <label class="gobad_topbar_borderbox_label" style="margin-top: 2px">My Inbox</label>
+                        <label class="gobad_topbar_borderbox_label" style="">Add space <img src="plus-w.jpg" width="18px" height="18px" style="border-radius: 25px;margin-top: -5px"></label>
+                    </div>
+                    
+                </div>
+                <div class="col-lg-5" style="height: 40px;position: fixed;margin-left: 33.33%">
+                    <div class="col-lg-12" style="height: 5px"></div>
+                    <input type="text" class="col-lg-10 gobad_topbar_search" placeholder="search">
+                    
+                </div>
+                <div class="col-lg-3" style="height: 40px;position: fixed;margin-left: 75%">
+                    
+                    <div class="col-lg-10" style="height: 100%">
+                        
+                        <label class="gobad_acc_open" style="cursor: pointer;color: white;font-size: medium;float: right;margin-top: 8px;margin-right: -25px">Bharath Appali Bharath Appali</label>
+                    </div>
+                        <div class="col-lg-2" style="height: 100%;">
+                            <img class="gobad_acc_open" src="hero.jpg" width="35px" height="35px" style="cursor: pointer;border-radius: 40px;margin-top: 2.5px">
+                        </div>
+                    
+                </div>
+                
+            </div>
+            <div id="cover"></div>
+            
+            <div id="shrink" class="col-lg-12" id="shrink" style="height: 5000px;margin-left: -2.1%;margin-top: 40px;">
+                <div class="col-lg-12">
+                    <div class="col-lg-7" style="background: red;height: 500px;margin-left: -10px"></div>
+                    <div class="col-lg-5" style="background: green;height: 500px;margin-left: 10px"></div>
+                </div>
+            </div>
+            <div class="gobad_strip_div">
+                <!-- 
+                
+                    write the ruby code for friends list in chat box
+                
+                -->
+                <div style="width: 100%;height: 90%;overflow-y: scroll">
+                <div class="col-lg-12 gobad_chat_block">
+                    <img src="hero.jpg" width="35px" height="35px" style="cursor: pointer;border-radius: 40px;margin-top: 1px">
+                    <label style="margin-left: 10px">Bharath appali</label>
+                </div>
+                <div class="col-lg-12 gobad_chat_block">
+                    <img src="hero.jpg" width="35px" height="35px" style="cursor: pointer;border-radius: 40px;margin-top: 1px">
+                    <label style="margin-left: 10px">Bharath appali</label>
+                </div>
+                <div class="col-lg-12 gobad_chat_block">
+                    <img src="hero.jpg" width="35px" height="35px" style="cursor: pointer;border-radius: 40px;margin-top: 1px">
+                    <label style="margin-left: 10px">Bharath appali</label>
+                </div>
+                
+                </div>
+                <!-- 
+                
+                    write the ruby code for friends list in chat box
+                
+                -->
+                <div style="width: 100%;height: 10%">
+                    <img src="search-chat.png" width="60px" height="60px" style="margin-left: 5px">
+                    <input type="text" class="gobad_chat_search" placeholder="Search ...">
+                </div>
+            </div>
+            <div id="gobad_acc_div" style="margin-left: 78%;height: 95%;position: fixed;display: none;margin-top: 40px;width: 22%;z-index: 10">
+                <div class="col-lg-12" style="height: 7%;background: rgba(0,0,0,0.8);padding-top: 5px">
+                    <div class="col-lg-12">
+                    <input type="submit" class="btn btn-primary col-lg-6" id="show_settings" style="font-size: large;margin-left: -15px" value="Notifications">
+                    <input type="submit" class="btn btn-success col-lg-6" id="show_notifications" style="font-size: large;margin-left: 15px" value="Settings">
+                    </div>
+                </div>
+                <div style="width: 100%;height: 98%;margin-top: 7%">
+                    <div id="settings" class="col-lg-12" style="background: rgba(0,0,0,0.8);height: 100%"></div>
+                    <div id="notifications" class="col-lg-12" style="background: rgba(255,255,255,0.8);height: 100%;display: none"></div>
+                </div>
+            </div>
+            <div id="gobad_menu_div" style="margin-left: -15px;height: 95%;background: orange;display: none;position: fixed;margin-top: 40px;width: 16%;z-index: 10">
+                
+            </div>
+            
+        </div>
+    </body>
+    <script type="text/javascript" src="js/jquery-1.11.1.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/jquery-ui.js"></script>
+    <script type="text/javascript" src="js/jquery-ui.min.js"></script>
+    <script>
+        $(function() {
+            $("#drag").draggable();
+            var check = true;
+            var menu = true;
+            var remainder1 = document.getElementById("remainder_img1");
+            var remainder2 = document.getElementById("remainder_img2");
+            var remainder3 = document.getElementById("remainder_img3");
+            var remainder4 = document.getElementById("remainder_img4");
+            $('#show_settings').click(function(){
+                $('#notifications').hide();
+               $('#settings').show();
+            });
+            $('#show_notifications').click(function(){
+                $('#notifications').show();
+               $('#settings').hide();
+            });
+            $('.gobad_acc_open').click(function(){
+                if(!check){
+                    check=true;
+                    setTimeout(function() {
+                        $('.gobad_add_icon').removeClass('open_gobad_add_icon');
+                        $('.gobad_add_icon_inner').removeClass('open_gobad_add_icon_inner');
+                        $('#plusimg').removeClass('rotate-plus-45');
+                          remainder1.height = 0;
+                         remainder1.width =0;
+                         remainder2.height = 0;
+                         remainder2.width =0;
+                         remainder3.height = 0;
+                         remainder3.width =0;
+                         remainder4.height = 0;
+                         remainder4.width =0;
+                    }, 100);
+                }
+                $('#gobad_acc_div').toggle('slide',{direction: 'right'},300);
+                
+            });
+            $('.gobad_menu_open').click(function(){
+                if(menu){
+                    menu = false;
+                    $('#cover').addClass('col-lg-2');
+                    $('#shrink').addClass('col-lg-10');
+                    $('#gobad_menu_div').show();
+                }else{
+                    menu = true;
+                    $('#cover').removeClass('col-lg-2');
+                    $('#shrink').removeClass('col-lg-10');
+                    $('#gobad_menu_div').hide();
+                }
+//                 $('#gobad_menu_div').toggle('slide',{direction: 'left'},300);   
+            });
+            $('.gobad_add_icon_inner').click(function(){
+                if(check){
+                    check=false;
+                    setTimeout(function() {
+                        $('.gobad_add_icon').addClass('open_gobad_add_icon');
+                        $('.gobad_add_icon_inner').addClass('open_gobad_add_icon_inner');
+                        $('#plusimg').addClass('rotate-plus-45');
+                         remainder1.height = 50;
+                         remainder1.width =50;
+                         remainder2.height = 50;
+                         remainder2.width =50;
+                         remainder3.height = 50;
+                         remainder3.width =50;
+                         remainder4.height = 50;
+                         remainder4.width =50;
+                    }, 100);
+                }else{
+                    check=true;
+                    setTimeout(function() {
+                        $('.gobad_add_icon').removeClass('open_gobad_add_icon');
+                        $('.gobad_add_icon_inner').removeClass('open_gobad_add_icon_inner');
+                        $('#plusimg').removeClass('rotate-plus-45');
+                          remainder1.height = 0;
+                         remainder1.width =0;
+                         remainder2.height = 0;
+                         remainder2.width =0;
+                         remainder3.height = 0;
+                         remainder3.width =0;
+                         remainder4.height = 0;
+                         remainder4.width =0;
+                    }, 100);
+                }
+            });
+        });
+    </script>
+</html>
